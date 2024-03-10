@@ -1,9 +1,10 @@
-package recipes.dao;
+package projects.dao;
+
+import projects.exceptions.DbException;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import recipes.exceptions.DbException;
 
 public class DbConnection {
     private static final String SCHEMA = "projects";

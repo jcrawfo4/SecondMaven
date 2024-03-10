@@ -1,4 +1,4 @@
-package recipes.exceptions;
+package projects.exceptions;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;
@@ -19,6 +19,8 @@ public class DbException extends RuntimeException {
     protected DbException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
+
+
 
     @Override
     public String getMessage() {

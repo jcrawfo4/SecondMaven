@@ -1,4 +1,4 @@
-import recipes.dao.DbConnection;
+import projects.dao.DbConnection;
 
 import java.sql.Connection;
 
