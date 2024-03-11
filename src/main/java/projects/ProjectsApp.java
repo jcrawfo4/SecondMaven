@@ -32,7 +32,7 @@ public class ProjectsApp {
             switch (selection) {
                 case -1:
                     done = exitMenu();
-                    break;
+                    //break;
                 case 1:
                     createProject();
                     break;
@@ -81,14 +81,16 @@ public class ProjectsApp {
 
     public void createProject() {
         String projectName = getStringInput("Enter the project name");
-        BigDecimal estimatedHours = getDecimalInput("Enter the estimated hours");
-        Integer actualHours = getIntInput(   "Enter the actual hours");
+        String estimatedHours = getStringInput("Enter the estimated hours");
+        BigDecimal estimatedHoursDecimal = getDecimalInput(estimatedHours);
+        String actualHours = getStringInput(   "Enter the actual hours");
+        BigDecimal actualHoursDecimal = getDecimalInput(actualHours);
         Integer difficulty = getIntInput("Enter the project difficulty (1-5)");
         String notes = getStringInput("Enter the project notes");
         Project project = new Project();
         project.setProjectName(projectName);
-        project.setEstimatedHours(estimatedHours);
-        project.setActualHours(BigDecimal.valueOf(actualHours));
+        project.setEstimatedHours(estimatedHoursDecimal);
+        project.setActualHours(actualHoursDecimal);
         project.setDifficulty(difficulty);
         project.setNotes(notes);
 
@@ -97,6 +99,11 @@ public class ProjectsApp {
     }
 
     private BigDecimal getDecimalInput(String input) {
-        return new BigDecimal(input).setScale(2);
+        try {
+            return new BigDecimal(input).setScale(2);
+        } catch (NumberFormatException e) {
+            System.out.println(input + " is not a valid number. Please try again.");
+            return BigDecimal.ZERO;
+        }
     }
 }

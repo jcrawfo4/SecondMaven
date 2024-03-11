@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86b03e24-e4aa-47ca-9ac9-61fd0053ffdd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Step.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projects/ProjectsApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projects/dao/ProjectDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ProjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQL_FILES/DiyProjectsSql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DiyProjects.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Projects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Projects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recipes/dao/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projects/dao/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recipes/exceptions/DbException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projects/exceptions/DbException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projects/ProjectsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projects/ProjectsApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +44,7 @@
     "Application.Main.executor": "Run",
     "Application.ProjectService.executor": "Run",
     "Application.Projects.executor": "Run",
+    "Application.ProjectsApp.executor": "Run",
     "Application.RecipeService.executor": "Run",
     "Application.Recipes.executor": "Run",
     "Maven.SecondMaven [clean].executor": "Run",
@@ -92,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/promineo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProjectService">
+  <component name="RunManager" selected="Application.ProjectsApp">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SecondMaven" />
@@ -114,6 +104,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProjectsApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projects.ProjectsApp" />
+      <module name="SecondMaven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RecipeService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RecipeService" />
       <module name="SecondMaven" />
@@ -121,20 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recipes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Recipes" />
-      <module name="SecondMaven" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProjectsApp" />
         <item itemvalue="Application.ProjectService" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Projects" />
         <item itemvalue="Application.RecipeService" />
-        <item itemvalue="Application.Recipes" />
       </list>
     </recent_temporary>
   </component>
