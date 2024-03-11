@@ -55,12 +55,11 @@ public class ProjectsApp {
     }
 
     private Integer getIntInput(String prompt) {
-        String input = null;
+        String input = getStringInput(prompt);
         if (Objects.isNull(input)) {
             return null;
         }
         try {
-            input = getStringInput(prompt);
             return Integer.valueOf(input);
         } catch (NumberFormatException e) {
             throw new DbException(input + " is not a valid number. \nPlease try again.");
