@@ -6,6 +6,7 @@ import projects.exceptions.DbException;
 
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 public class ProjectService {
     ProjectDao projectDao = new ProjectDao();
@@ -15,7 +16,10 @@ public class ProjectService {
     }
 
     public List<Project> fetchAllProjects() {
-        return projectDao.fetchAllProjects();
+        return projectDao.fetchAllProjects()
+                .stream()
+                .sorted((project1, project2) -> project1.getProjectId() - project2.getProjectId())
+                .collect(Collectors.toList());
     }
 
     public Project fetchProjectById(Integer projectId) {
